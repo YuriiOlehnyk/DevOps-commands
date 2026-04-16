@@ -4,6 +4,7 @@
 -b = become root on target server(for getting access to do something)
 ### Structure
 >Commands
+```bash
 ansible <group> -m <module> -a <atribute>
 
 ### Examples
@@ -32,10 +33,10 @@ ansible staging_servers -m apt -a "name=apache2 state=latest" -b    - install ap
 
 ### Debugging
 -v in the end of command, or -v v, -vvv, -vvvv
-
+```
 ### Run a playbook
 >Playbook
-
+```bash
 `ansible-playbook playbook.yml`
 
 ### Security
