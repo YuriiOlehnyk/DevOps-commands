@@ -38,10 +38,10 @@ ansible staging_servers -m apt -a "name=apache2 state=latest" -b    - install ap
 >Playbook
 ```bash
 `ansible-playbook playbook.yml`
-
+```
 ### Security
 >Ansible vault
-
+```bash
 `ansible-vault create secrets.yml`  - create new encrypted file
 `ansible-vault encrypt playbook.yml` - encrypt existing file
 `ansible-vault view secrets.yml` - view encrypted files
@@ -50,10 +50,11 @@ ansible staging_servers -m apt -a "name=apache2 state=latest" -b    - install ap
 `ansible-vault edit secrets.yml` - change encrypted files
 `ansible-vault encrypt_string 'my_secret_value' --name 'my_variable'` - encrypt one string(for making passwords for example)
 `ansible-vault rekey secrets.yml` - change pass on encrypted file
-
+```
 >Playbook with enc files
+```bash
 `ansible-playbook playbook.yml --ask-vault-pass` - run playbook that have encrypted files
 `ansible-playbook playbook.yml --vault-password-file ~/.vault_pass` - (with password file)
-
+```
 
                    
