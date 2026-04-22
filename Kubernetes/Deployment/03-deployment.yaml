@@ -20,7 +20,7 @@ spec:
         version: *version
     spec:
       initContainers:
-        - name: init-myservice
+        - name: init-container
           image: busybox:1.28
           command: 
             - 'sh'
