@@ -188,6 +188,8 @@ sudo ip route add unreachable 8.8.8.8/32    # add unreachable route (returns err
 sudo ip route add blackhole 8.8.8.8/32      # add blackhole route (silently drops)
 sudo ip route del 8.8.8.8/32                # delete a route
 sudo netplan apply                           # apply netplan network configuration
+nslookup <domain>                             # see IP of domain
+dig <domain>                                  # more info about Domain
 ```
 
 > **Flags**
