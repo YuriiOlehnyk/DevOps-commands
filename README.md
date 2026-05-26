@@ -1,4 +1,5 @@
-# DevOps-commands
-Commands, configs and examples of scripts related to DevOps
+# Notes
+Linux, Docker, Ansible etc
+
 
 
